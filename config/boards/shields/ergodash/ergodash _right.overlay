@@ -5,6 +5,7 @@
  */
 
 #include "ergodash.dtsi"
+#include <dt-bindings/led/led.h>
 
 &default_transform {
     col-offset = <7>;
