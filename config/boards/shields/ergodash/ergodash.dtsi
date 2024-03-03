@@ -62,6 +62,10 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)         RC(4,5) RC(4,6) RC(4,13) RC(4,12
     led_strip: ws2812@0 {
       compatible = "worldsemi,ws2812-spi";
 
+      /* SPI */
+      reg = <0>; /* ignored, but necessary for SPI bindings */
+      spi-max-frequency = <4000000>;
+    
       /* WS2812 */
       chain-length = <10>; /* number of LEDs */
       spi-one-frame = <0x70>;
